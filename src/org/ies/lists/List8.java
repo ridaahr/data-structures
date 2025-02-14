@@ -17,8 +17,7 @@ public class List8 {
             return null;
         } else {
             var min = numbers.getFirst();
-            for (int i = 0; i < numbers.size(); i++) {
-                var num = numbers.get(i);
+            for (var num: numbers) {
                 if (num < min) {
                     min = num;
                 }

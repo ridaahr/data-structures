@@ -14,8 +14,13 @@ public class List6 {
     }
     public static Double avg(List<Double> numbers) {
         var result = 0.0;
-        for (var num: numbers) {
-            result = result + num;
-        } return result/ numbers.size();
+        if (numbers.isEmpty()) {
+            return null;
+        } else {
+            for (var num : numbers) {
+                result = result + num;
+            }
+            return result / numbers.size();
+        }
     }
 }

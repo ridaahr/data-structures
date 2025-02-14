@@ -17,8 +17,7 @@ public class List7 {
             return null;
         } else {
             var max = numbers.getFirst();
-            for (int i = 0; i < numbers.size(); i++) {
-                var num = numbers.get(i);
+            for (var num: numbers) {
                 if (num > max) {
                     max = num;
                 }
