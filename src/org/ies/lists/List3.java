@@ -14,7 +14,7 @@ public class List3 {
         System.out.println(first(lista2));
     }
     public static Integer first(List<Integer> list) {
-        if (list.isEmpty() == true) {
+        if (list.isEmpty()) {
             return null;
         } else {
             return list.get(0);

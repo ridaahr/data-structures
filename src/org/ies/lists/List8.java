@@ -13,7 +13,7 @@ public class List8 {
         System.out.println(min(doubleList));
     }
     public static Double min(List<Double> numbers) {
-        if (numbers.isEmpty() == true) {
+        if (numbers.isEmpty()) {
             return null;
         } else {
             var min = numbers.getFirst();

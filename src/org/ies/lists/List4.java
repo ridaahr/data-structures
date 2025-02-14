@@ -15,7 +15,7 @@ public class List4 {
         System.out.println(last(integerList2));
     }
     public static Integer last(List<Integer> list) {
-        if (list.isEmpty() == true) {
+        if (list.isEmpty()) {
             return null;
         } else {
             return list.get(list.size()-1);

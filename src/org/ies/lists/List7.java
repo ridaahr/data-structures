@@ -13,7 +13,7 @@ public class List7 {
         System.out.println(max(doubleList));
     }
     public static Double max(List<Double> numbers) {
-        if (numbers.isEmpty() == true) {
+        if (numbers.isEmpty()) {
             return null;
         } else {
             var max = numbers.getFirst();
