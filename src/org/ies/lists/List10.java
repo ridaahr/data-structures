@@ -17,8 +17,8 @@ public class List10 {
     }
     public static List<Integer> sum10(List<Integer> numbers) {
         List<Integer> newList = new LinkedList<>();
-        for (int i = 0; i < numbers.size(); i++) {
-            newList.add(i, numbers.get(i) + 10);
+        for (var num: numbers) {
+            newList.add(num + 10);
         } return newList;
     }
 }

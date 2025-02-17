@@ -16,15 +16,15 @@ public class List9 {
         List<Integer> integerList = new LinkedList<>();
         String option = "";
         do {
-            System.out.println("¿Quieres introducir otro número?");
+            System.out.println("¿Quieres un número?");
             option = scanner.nextLine();
             if (option.equals("si")) {
                 System.out.println("Introduce el número:");
                 var num = scanner.nextInt();
                 scanner.nextLine();
-                integerList.addLast(num);
+                integerList.add(num);
             }
-        } while (option.equals("si"));
+        } while (!option.equals("no"));
         return integerList;
     }
 }

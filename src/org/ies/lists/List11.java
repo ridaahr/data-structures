@@ -7,6 +7,7 @@ public class List11 {
     public static void main(String[] args) {
         List<Double> doubleList = new LinkedList<>();
         doubleList.add(5.2);
+        doubleList.add(2.1);
         doubleList.add(8.0);
         doubleList.add(3.1);
         doubleList.add(6.0);
@@ -23,11 +24,11 @@ public class List11 {
 
     public static List<Double> union(List<Double> numbers1, List<Double> numbers2) {
        List<Double> unionList = new LinkedList<>();
-        for (int i = 0; i < numbers1.size(); i++) {
-            unionList.add(numbers1.get(i));
+        for (var num: numbers1) {
+            unionList.add(num);
         }
-        for (int i = 0; i < numbers2.size(); i++) {
-            unionList.add(numbers2.get(i));
+        for (var num: numbers2) {
+            unionList.add(num);
         }
         return unionList;
     }
